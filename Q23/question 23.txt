@@ -1,0 +1,27 @@
+// Input
+const number = parseInt(prompt("Enter a number:"));
+
+// Function to check prime no.
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  
+  // Check if num is divisible by any number from 2 to sqrt(num)
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+// Check if the number is prime
+const isNumberPrime = isPrime(number);
+
+if (isNumberPrime) {
+  console.log(number + " is a prime number.");
+} else {
+  console.log(number + " is not a prime number.");
+}

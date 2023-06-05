@@ -1,0 +1,8 @@
+var array = ["Pune", "Indore", "Nagpur", "Jaipur", "pw skills", "Delhi", "pw skills"];
+
+// Using lastIndexOf 
+var firstInd = array.lastIndexOf("pw skills");
+var lastInd = array.lastIndexOf("pw skills");
+
+console.log("First occurrence :", firstInd);
+console.log("Last occurrence :", lastInd);

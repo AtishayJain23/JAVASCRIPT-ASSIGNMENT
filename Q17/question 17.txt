@@ -1,0 +1,19 @@
+// Function to determine number of days in a month
+function getDaysInMonth(month, year) {
+
+  var lastDay = new Date(year, month + 1, 0).getDate();
+  return lastDay;
+}
+
+// input for the month and year
+var month = prompt("Enter the month (January is 0):");
+var year = prompt("Enter the year:");
+
+// Converting
+var monthN = parseInt(month);
+var yearN = parseInt(year);
+
+// Calculate the number of days in the given month
+var daysinMonth = getDaysInMonth(monthN, yearN);
+
+console.log(daysinMonth);

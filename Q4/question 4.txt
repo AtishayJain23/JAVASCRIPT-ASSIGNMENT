@@ -1,0 +1,6 @@
+var str = "JavaScript is a powerful language.";
+
+// Checking
+var contain = str.includes("Script");
+
+console.log(contain);

@@ -1,0 +1,15 @@
+// Initialize empty arrays
+const even = [];
+const odd = [];
+
+// Populate the arrays with even and odd numbers
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    even.push(i);
+  } else {
+    odd.push(i);
+  }
+}
+
+console.log("Even no.:", even);
+console.log("Odd no.:", odd);

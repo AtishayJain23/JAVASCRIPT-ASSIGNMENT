@@ -1,0 +1,6 @@
+var str = "   Hello, Atishay   ";
+
+// Removing Whitespaces
+var trimmed = str.trim();
+
+console.log(trimmed);

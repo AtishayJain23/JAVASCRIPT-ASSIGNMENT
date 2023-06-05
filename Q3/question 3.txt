@@ -1,0 +1,6 @@
+var str = "this is atishay";
+
+// Converting lower to upper
+var upperStr = str.toUpperCase();
+
+console.log(upperStr);

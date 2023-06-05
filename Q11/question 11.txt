@@ -1,0 +1,32 @@
+//Current date and time
+var crt = new Date();
+
+//year today
+var year = crt.getFullYear();
+
+//month today 
+var month = crt.getMonth();
+
+//date today
+var date = crt.getDate();
+
+//day today
+var day = crt.getDay();
+
+//hours now 
+var hours = crt.getHours();
+
+//minutes now
+var minutes = crt.getMinutes();
+
+//number of seconds
+var seconds = crt.getTime() / 1000;
+
+//Results
+console.log("Year today:", year);
+console.log("Month today:", month);
+console.log("Date today:", date);
+console.log("Day today:", day);
+console.log("Hours now:", hours);
+console.log("Minutes now:", minutes);
+console.log("Seconds elapsed from January 1, 1970 to now:", seconds);

@@ -1,0 +1,30 @@
+4 > 3 : Result: true
+4 >= 3 : Result: true
+4 < 3 : Result: false
+4 <= 3 : Result: false
+4 == 4 : Result: true
+4 === 4 : Result: true
+4 != 4 : Result: false
+4 !== 4 : Result: false
+4 != '4' : Result: false
+4 == '4' : Result: true
+4 === '4' : Result: false
+
+//=========================
+
+console.log(4 > 3);      
+console.log(4 >= 3);     
+console.log(4 < 3);      
+console.log(4 <= 3);     
+console.log(4 == 4);     
+console.log(4 === 4); 
+console.log(4 != 4);     
+console.log(4 !== 4);   
+console.log(4 != '4');  
+console.log(4 == '4');   
+console.log(4 === '4'); 
+
+var pyth = "python";
+var jarg = "jargon";
+
+console.log(pyth.length < jarg.length); 

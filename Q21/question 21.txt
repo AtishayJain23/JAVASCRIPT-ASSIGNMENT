@@ -1,0 +1,11 @@
+var countries = ['Afghanistan', 'Albania', 'Algeria','Zimbabwe'];
+
+// Checking
+if (countries.includes('Ethiopia')) {
+  console.log('ETHIOPIA');
+} else {
+  // Adding
+  countries.push('Ethiopia');
+}
+
+console.log(countries);

@@ -1,0 +1,38 @@
+// Examples of true
+
+var num1 = 11;
+var num2 = 7;
+var result = num1 > num2;
+console.log(result);
+
+//==============================
+
+var str = "Hello, Atishay";
+var result = str !== "";
+console.log(result);
+
+//=============================
+
+var num = 15;
+var result = Boolean(num);
+console.log(result);
+
+//Examples of false
+
+var val1 = 15;
+var val2 = "15";
+var result = val1 === val2;
+console.log(result); 
+
+//=============================
+
+var undefVar;
+var result = (undefVar === undefined);
+console.log(result); 
+
+//=============================
+
+var num = 0;
+var result = Boolean(num);
+
+console.log(result); 

@@ -1,0 +1,33 @@
+// countries.js
+
+var countries = [
+  "India",
+  "Pakistan",
+  "Bangladesh",
+  "Zimbabwe"
+];
+
+// Exporting the array
+module.exports = countries;
+
+// web_techs.js
+
+var webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React"
+  "Node.js"
+];
+
+// Exporting array
+module.exports = webTechs;
+
+// main.js
+
+var countries = require("./countries.js");
+var webTechs = require("./web_techs.js");
+
+console.log("Countries:", countries);
+
+console.log("Web Technologies:", webTechs);

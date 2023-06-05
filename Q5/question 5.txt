@@ -1,0 +1,6 @@
+var str = "Hello Atishay";
+
+// Spliting into Array
+var strArr = str.split(" ");
+
+console.log(strArr);

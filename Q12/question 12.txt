@@ -1,0 +1,21 @@
+//Current date and time
+var now = new Date();
+
+// Function to pad a number
+function padNum(num) {
+  return num.toString().padStart(2, '0');
+}
+
+//time format: YYYY-MM-DD HH:mm
+var f1 = `${now.getFullYear()}-${padNum(now.getMonth() + 1)}-${padNum(now.getDate())} ${padNum(now.getHours())}:${padNum(now.getMinutes())}`;
+
+//time format: DD-MM-YYYY HH:mm
+var f2 = `${padNum(now.getDate())}-${padNum(now.getMonth() + 1)}-${now.getFullYear()} ${padNum(now.getHours())}:${padNum(now.getMinutes())}`;
+
+//time format: DD/MM/YYYY HH:mm
+var f3 = `${padNum(now.getDate())}/${padNum(now.getMonth() + 1)}/${now.getFullYear()} ${padNum(now.getHours())}:${padNum(now.getMinutes())}`;
+
+// Display the results
+console.log("YYYY-MM-DD HH:mm:", f1);
+console.log("DD-MM-YYYY HH:mm:", f2);
+console.log("DD/MM/YYYY HH:mm:", f3);

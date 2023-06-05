@@ -1,0 +1,58 @@
+// Function to determine if a year is a leap year
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return true;
+    }
+  } else {
+    return false;
+  }
+}
+
+// Function to determine the number of days in a month, considering leap years
+function getDaysInMonth(month, year) {
+  var daysInMonth;
+
+  switch (month) {
+    case 0: // January
+    case 2: // March
+    case 4: // May
+    case 6: // July
+    case 7: // August
+    case 9: // October
+    case 11: // December
+      daysInMonth = 31;
+      break;
+    case 1: // February
+      if (isLeapYear(year)) {
+        daysInMonth = 29;
+      } else {
+        daysInMonth = 28;
+      }
+      break;
+    default: // All other months
+      daysInMonth = 30;
+      break;
+  }
+
+  return daysInMonth;
+}
+
+// input for the month and year
+var month = prompt("Enter the month (January is 0):");
+var year = prompt("Enter the year:");
+
+// Converting
+var monthNumber = parseInt(month);
+var yearNumber = parseInt(year);
+
+// Calculate the number of days in the given month, considering leap years
+var daysinMonth = getDaysInMonth(monthNumber, yearNumber);
+
+console.log("Number of days in the month:", daysinMonth);

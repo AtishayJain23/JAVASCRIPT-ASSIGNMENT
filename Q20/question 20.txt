@@ -1,0 +1,25 @@
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+
+// Adding 'Meat' 
+if (!shoppingCart.includes('Meat')) {
+  shoppingCart.unshift('Meat');
+}
+
+// Adding 'Sugar' 
+if (!shoppingCart.includes('Sugar')) {
+  shoppingCart.push('Sugar');
+}
+
+// Removing 'Honey'
+const honeyIndex = shoppingCart.indexOf('Honey');
+if (honeyIndex !== -1) {
+  shoppingCart.splice(honeyIndex, 1);
+}
+
+// Modifying 'Tea' to 'Green Tea'
+const teaIndex = shoppingCart.indexOf('Tea');
+if (teaIndex !== -1) {
+  shoppingCart[teaIndex] = 'Green Tea';
+}
+
+console.log(shoppingCart);

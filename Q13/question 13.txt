@@ -1,0 +1,12 @@
+var age = prompt("Enter your age:");
+
+//Age to Int
+var ageNum = parseInt(age);
+
+if (ageNum >= 18) {
+  console.log("You are old enough to drive.");
+} else {
+  //years needed to turn 18
+  var Wait = 18 - ageNum;
+  console.log("You need to wait for",Wait, "year(s) to turn 18.");
+}

@@ -1,0 +1,6 @@
+var str = 'Facebook, Google, Microsoft, Apple, IBM, Amazon,Oracle';
+
+// Spiliting
+var strArr = str.split(',');
+
+console.log(strArr);
