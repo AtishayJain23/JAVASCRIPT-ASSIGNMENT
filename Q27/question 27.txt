@@ -1,0 +1,17 @@
+function Prime(number) {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+for (let number = 0; number <= 100; number++) {
+  if (Prime(number)) {
+    console.log(number);
+  }
+}

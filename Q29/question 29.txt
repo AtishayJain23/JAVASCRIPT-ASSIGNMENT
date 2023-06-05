@@ -1,0 +1,9 @@
+function getFileExtension(filename) {
+  const extension = filename.split('.').pop();
+  return extension;
+}
+
+//Ex
+const filename = "Ati.txt";
+const extension = getFileExtension(filename);
+console.log(extension);
